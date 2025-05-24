@@ -1,3 +1,7 @@
 
+:root{
+    --navBarColor: #EDE0D4;
+}
+
 /*Components*/
 @import './comp/NavBar.css' /*Nav Bar Comp*/
