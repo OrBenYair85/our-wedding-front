@@ -6,3 +6,26 @@
 :root{
     --navBarColor: #EDE0D4;
 }
+
+
+
+/* Reset & Layout */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area */
+main {
+  flex: 1;
+  overflow-y: auto;
+  padding-top: 4.5rem;    /* height of AppHeader */
+  padding-bottom: 4.5rem; /* height of NavBar */
+}
+
