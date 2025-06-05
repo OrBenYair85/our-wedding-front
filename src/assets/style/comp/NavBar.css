@@ -38,3 +38,46 @@
   height: 1.5rem; /* 24px */
   fill: currentColor;
 }
+
+
+
+/* Wrapper to center and allow floating */
+.add-button-wrapper {
+  position: relative;
+  top: -1.2rem; /* Pushes it up above the navbar */
+  z-index: 2;   /* Keeps it above other icons */
+}
+
+/* Circular, standout button */
+.add-button {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Optional hover effect */
+.add-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+
+/* Highlight the icon when its tab is active */
+.nav-bar li a.active {
+  color: var(--activeColor, #000);         /* fallback black */
+  background-color: rgba(0, 0, 0, 0.05);   /* light background */
+  border-radius: 0.75rem;
+}
+
+/* Optional: stronger effect for the add button */
+.add-button.active {
+  border-color: var(--activeColor, #000);
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.15);
+}
