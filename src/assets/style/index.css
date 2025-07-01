@@ -2,6 +2,7 @@
 /*Components*/
 @import './comp/NavBar.css'; /*Nav Bar Comp*/
 @import './comp/AppHeader.css'; /*App Header Comp*/
+@import './comp/AddPhoto.css'; /*Add photo Comp*/
 
 :root{
     --navBarColor: #EDE0D4;
